@@ -8,4 +8,11 @@ servers:
 paths:
   /cars:
     get:
+      requestBody:
+        description: This is a specification of STD24161
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/Cars'
+
 
